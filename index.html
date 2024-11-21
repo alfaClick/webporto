@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahid Alfarisi</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--navbar-->
+<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 w-full z-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hello World</span>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#hero" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!-- End navbar-->
+
+<!--Hero section-->
+<section id="hero" class="bg-blue-900 dark:bg-gray-900 pt-20">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
+            Hello World
+        </h1>
+        <p class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-48 dark:text-white">
+            My name is Wahid Alfarisi, and here I will introduce who I am and what projects I have worked on.
+            I am open to collaboration opportunities if you like the results of the projects I have worked on.
+        </p>
+    
+<!-- Button contact -->
+<div class="text-center p-5">
+  <button onclick="scroolToContact()" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600">
+    Contact me!
+  </button> 
+</div>
+<!-- End Button contact -->
+
+
+<!-- End Hero section-->
+</section>
+
+
+<!--About section-->
+<section id="about" class="bg-white dark:bg-gray-900 py-16 mt-0">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Teks About Me -->
+        <div class="text-center md:text-left">
+            <h2 class="text-5xl font-bold text-gray-900 dark:text-white mb-6">About Me</h2>
+            <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+                I am a passionate Frontend Developer with a deep love for creating visually stunning and user-friendly websites. Currently pursuing my Computer Engineering degree, I am driven by curiosity to explore web development technologies, focusing on building responsive and interactive user interfaces.
+            </p>
+        </div>
+        <!-- Ikon Visual -->
+        <div class="text-center">
+            <span class="inline-block bg-blue-500 dark:bg-blue-700 p-6 rounded-full shadow-lg">
+                <img src="img/ghib.jpg" alt="Logo" class="h-24 w-24 rounded-full animate-float-img">
+            </span>
+        </div>
+        
+        <!--CSS untuk bagian about-->
+        <style>
+            @keyframes float-img {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+
+            button {
+              position: relative;
+              z-index: 100;
+            }
+
+            .animate-float-img {
+                animation: float-img 1s ease-in-out infinite;
+            }
+        </style>
+        <!--CSS untuk bagian about-->
+        
+</section>
+<!-- About section-->
+
+<!--card didalam about-->
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <!-- Card 1 -->
+    <div class="bg-gradient-to-br from-yellow-400 via-red-500 to-pink-500 text-white rounded-lg p-6 shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+        <h3 class="text-2xl font-semibold">✨ Skills & Expertise</h3>
+        <ul class="list-disc text-left mt-4 space-y-2 font-medium">
+            <li class="hover:text-yellow-300">HTML, CSS, JavaScript</li>
+            <li class="hover:text-yellow-300">Tailwind CSS</li>
+            <li class="hover:text-yellow-300">Responsive Web Design</li>
+        </ul>
+        <div class="flex justify-start mt-6 space-x-4">
+            <!-- Logo HTML -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo" class="w-10 h-10">
+            <!-- Logo CSS -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo" class="w-10 h-10">
+            <!-- Logo JavaScript -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="w-10 h-10">
+            <!-- Logo Tailwind CSS -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" class="w-10 h-10">
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 text-white rounded-lg p-6 shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+        <h3 class="text-2xl font-semibold">🚀 What Drives Me</h3>
+        <p class="text-left mt-4 font-medium">
+            I am motivated by the challenge of solving complex problems through design and code. Every project I work on pushes me to improve, and I am excited to continue learning and growing in the web development space.
+        </p>
+        <p class="mt-4 text-yellow-300 font-semibold italic">"Code is poetry, and I am a poet!"</p>
+    </div>
+</div>
+<!--card didalam about-->
+<!--End about-->
+
+<!--Projects section-->
+<section id="projects" class="bg-blue-900 dark:bg-gray-900 pt-20 pb-10">
+    <div class="text-center mb-10">
+        <h2 class="text-5xl font-extrabold text-white">🚀 Projects</h2>
+    </div>
+    <div class="flex justify-center flex-wrap gap-6 max-w-screen-lg mx-auto">
+        <!-- Card 1 -->
+        <div class="w-full md:w-1/3 lg:w-1/4 bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300 dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="img/Screenshot (288).png" alt="Image 1" />
+            </a>
+            <div class="p-5">
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This website is designed to sell premium, healthy, and delicious donuts. It is built using HTML, CSS, and JavaScript, and utilizes animations from GSAP to enhance the visual appeal.</p>
+                <a href="https://alfaclick.github.io/donutcraft/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Visit
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="w-full md:w-1/3 lg:w-1/4 bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300 dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="img/Screenshot (290).png" alt="Image 2" />
+            </a>
+            <div class="p-5">
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This website sells a variety of sweet foods and desserts. It includes a shopping cart and payment feature. It is built using HTML, CSS, and JavaScript, and incorporates animations from GSAP for engaging interactions.</p>
+                <a href="https://alfaclick.github.io/dessert.website/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Visit
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w-full md:w-1/3 lg:w-1/4 bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300 dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="img/Screenshot (291).png" alt="Body Mass Index" />
+            </a>
+            <div class="p-5">
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">This website is used to calculate body mass index (BMI) based on height and weight. It is built using HTML, CSS, and JavaScript, and features animations from GSAP for a more interactive user experience.</p>
+                <a href="https://alfaclick.github.io/Bodymassindex/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Visit
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End projects-->
+
+<section id="contact" class="flex flex-col lg:flex-row items-center justify-center bg-gray-100 p-8 gap-8">
+  <!-- Alert Success -->
+  <div id="alertSuccess" class="alert alert-success fixed top-4 right-4 w-80 hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <span>Message sent successfully!</span>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-2/5">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Us</h2>
+    <form id="contactForm" class="space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        ></textarea>
+      </div>
+      <button
+        id="submitButton"
+        type="submit"
+        class="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-500 transition"
+      >
+        Send Message
+      </button>
+      <button 
+        id="loadingButton" 
+        type="button"
+        class="w-full bg-indigo-400 text-white py-3 px-4 rounded-md hidden" 
+        disabled
+      >
+        <span class="loading loading-spinner loading-md"></span>
+      </button>
+    </form>
+  </div>
+
+  <!-- Contact Information -->
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full lg:w-1/3">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Get in Touch</h2>
+    <div class="space-y-6">
+      <!-- Email -->
+      <div class="flex items-center gap-4">
+        <img src="img/email logo.png" alt="email logo" class="w-8 h-8">
+        <span class="text-gray-700 hover:text-indigo-600">
+          alfarisiwahid@gmail.com
+        </span>
+      </div>
+      <!-- GitHub -->
+      <div class="flex items-center gap-4">
+        <img src="img/logo github.jpg" alt="Github" class="w-8 h-8">
+        <a href="https://github.com/alfaClick" target="_blank" class="text-gray-700 hover:text-indigo-600">
+          github.com/alfaClick
+        </a>
+      </div>
+      <!-- Phone -->
+      <div class="flex items-center gap-4">
+        <img src="img/wa.png" alt="whatsApp" class="w-8 h-8">
+        <span class="text-gray-700">+62 852 1132 5382</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--contact form-->
+ 
+
+
+<!--footer-->
+<footer class="bg-white text-gray-800 py-8">
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <!-- Social Media Links -->
+            <a href="#" class="text-gray-600 hover:text-blue-500">
+                🌐
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-500">
+                📱
+            </a>
+            <a href="#" class="text-gray-600 hover:text-blue-500">
+                💼
+            </a>
+        </div>
+        <p class="text-sm font-semibold">&copy; 2024 Wahid Alfarisi. All rights reserved.</p>
+    </div>
+</footer>
+<!--footer-->
+
+<!-- Load GSAP and ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="./main.js"></script>
+</body>
+</html>
